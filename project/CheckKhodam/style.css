@@ -1,0 +1,86 @@
+*, html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .3s all ease-in-out;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.box input {
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: smaller;
+    width: 200px;
+}
+
+p {
+    font-size: small;
+}
+
+#btn-submit {
+    font-size: 10px;
+    width: 130px;
+    height: 20px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#btn-submit:hover{
+    background-color: rgb(255, 38, 0);
+}
+
+#hasil {
+    color: tomato;
+}
+
+
+.none-display {
+    background-color: white;
+    color: black;
+}
+
+
+
+/* responsive */
+@media screen  and (max-width: 484px) {
+    .none-display {
+        display: block;
+    }
+    .box {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 484px) {
+    .none-display {
+        display: none;
+    }
+    .box {
+        display: flex;
+    }
+}
